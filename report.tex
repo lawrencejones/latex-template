@@ -1,0 +1,88 @@
+\documentclass[a4paper]{article}
+
+\usepackage[english]{babel}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{sectsty}
+\usepackage{fullpage}
+\usepackage{syntax}
+\usepackage{array}
+\usepackage{multirow}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{graphicx}
+\usepackage{hyperref}
+
+\hypersetup{
+     colorlinks   = true
+}
+
+\sectionfont{\fontsize{12}{15}\selectfont}
+
+\newcommand{\BigO}[1]{\ensuremath{\operatorname{O}\left(#1\right)}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\title{\textsc{WebApps}\\Project Report}
+
+\author{Tom Burnell \{thb12\} \  Andrea Michi \{am8112\} \\
+        Lawrence Jones \{lmj112\}}
+
+\date{}
+\begin{document}
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% QUESTION 1
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+CATe is a Virtual Learning Environment system currently in place for DoC students at Imperial College. The site supports distribution of course content, assignment of exercises/courseworks and disseminate student grades.
+
+While CATe is still performing admirably for the department's purposes, the site is now showing age with respect to dated UI/UX, and more importantly a lack of interaction with important student information.
+
+In summer 2012, a DoC student Peter Hamilton created a web userscript \textit{(\href{https://github.com/petehamilton/classy-cate}{classy-cate})} that could be installed with Tampermonkey or equivalent, that reskinned CATe and dealt with scraping of information. This went on to be developed by DoC students, with a few features such as upcoming deadlines presented on a dashboard. Unfortunately not many students used the script, mainly due to lack of awareness of how userscripts work.
+
+On top of this, due to the nature of a webscript, the projects aim was limited without full control over the clientside and no ability to collect/persist data. As such, the list of possible enhancements are restricted. The logical step was to move from userscript to a separate application entirely, in order to allow a wider scope of enhancements to be built on top of CATe.
+
+
+%% APP DESCRIPTION
+\section{App Description}
+
+Our app is to be a website that makes use of CATe data to provide a richer VLE resource for DoC students. Our key aims are to reduce the current frustrations with CATe and address the issue of student interaction and discusion on courses.
+
+CATe organises data in a slightly scattered manner; course notes and grades are detached from courses, and exam information with past papers is hosted on an entirely different domain.
+
+We plan to make a DoC course an integral part of our site, hosting data around those courses in order to group relevant content for easier access.
+
+The division of exams and course content prevents useful sharing of information, and so we aim to unify these two sources.
+
+Finally, our site should promote student interaction with both the course and the lecturer who leads it. Exercises and lectures can benefit from student discussions, and while Piazza provides a platform the experience could be much improved by linking documents/content directly to the discussion thread. We aim to allow tagged discussion of our sites content, facilitating student collaboration over shared resources such as model answers.
+
+
+%% PROJECT MANAGEMENT
+\section{Project Management}
+
+\subsection{Group Structure}
+\subsection{Language/Framework Choices}
+\subsection{Version Control \& Issue Tracking}
+
+%% IMPLEMENTATION DETAILS
+\section{Implementation Details}
+
+\subsection{Server}
+
+\subsection{Web Client}
+
+\subsection{Jakefile}
+
+\subsection{Parser-Proxy Pattern}
+
+%% ACKNOWLEDGEMENTS
+\section{Acknowledgements}
+
+%% CONCLUSION
+\section{Conclusion}
+
+Achieved/Would like to/Would do differently
+
+\end{document}
