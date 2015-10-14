@@ -3,6 +3,17 @@
 A basic latex report template that should compile correctly with a default installation of
 `pdflatex`.
 
+## Clone
+
+To pull this template into another projects repo, run...
+
+```sh
+curl --silent -L https://github.com/lawrencejones/latex-template/archive/master.zip | \
+  bsdtar --exclude README.md -xvf-
+```
+
+This will extract the template contents into a `latex-template-master` directory.
+
 ## Build
 
 Run `make report.pdf` to compile pdf. The `.sty` files in the `libtex` directory are required for
