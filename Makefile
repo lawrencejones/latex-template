@@ -1,4 +1,4 @@
-.PHONY: clean
+.PHONY: clean view
 
 report.pdf: report.tex
 	(cd libtex && pdflatex ../report.tex) && \
